@@ -1,0 +1,15 @@
+/workspaces/Aprendiendo_CSHARP/practica/bin/Debug/net7.0/practica
+/workspaces/Aprendiendo_CSHARP/practica/bin/Debug/net7.0/practica.deps.json
+/workspaces/Aprendiendo_CSHARP/practica/bin/Debug/net7.0/practica.runtimeconfig.json
+/workspaces/Aprendiendo_CSHARP/practica/bin/Debug/net7.0/practica.dll
+/workspaces/Aprendiendo_CSHARP/practica/bin/Debug/net7.0/practica.pdb
+/workspaces/Aprendiendo_CSHARP/practica/obj/Debug/net7.0/practica.csproj.AssemblyReference.cache
+/workspaces/Aprendiendo_CSHARP/practica/obj/Debug/net7.0/practica.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/Aprendiendo_CSHARP/practica/obj/Debug/net7.0/practica.AssemblyInfoInputs.cache
+/workspaces/Aprendiendo_CSHARP/practica/obj/Debug/net7.0/practica.AssemblyInfo.cs
+/workspaces/Aprendiendo_CSHARP/practica/obj/Debug/net7.0/practica.csproj.CoreCompileInputs.cache
+/workspaces/Aprendiendo_CSHARP/practica/obj/Debug/net7.0/practica.dll
+/workspaces/Aprendiendo_CSHARP/practica/obj/Debug/net7.0/refint/practica.dll
+/workspaces/Aprendiendo_CSHARP/practica/obj/Debug/net7.0/practica.pdb
+/workspaces/Aprendiendo_CSHARP/practica/obj/Debug/net7.0/practica.genruntimeconfig.cache
+/workspaces/Aprendiendo_CSHARP/practica/obj/Debug/net7.0/ref/practica.dll
