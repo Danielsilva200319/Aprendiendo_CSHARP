@@ -16,12 +16,12 @@
         // Console.WriteLine("\nEl resultado es: " + resultado);
         var radio = 0d;
         var resultado = 0d;
-        const double pi =3.14;
+        const double Pi =3.14;
         Console.WriteLine("Bienbenidos, Vamos a calcular círculos");
         // pi * radio * radio
         Console.Write("\nIngrese el valor de radio: ");
         radio = Convert.ToDouble(Console.ReadLine());
-        resultado = pi * radio * radio;
+        resultado = Pi * radio * radio;
         Console.WriteLine("\nEl área de tu círculo es de: " + resultado);
     }
 }
