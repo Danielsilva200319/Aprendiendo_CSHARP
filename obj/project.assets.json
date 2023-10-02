@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/workspaces/Aprendiendo_CSHARP/practica/practica.csproj",
+      "projectUniqueName": "/workspaces/Aprendiendo_CSHARP/practica.csproj",
       "projectName": "practica",
-      "projectPath": "/workspaces/Aprendiendo_CSHARP/practica/practica.csproj",
+      "projectPath": "/workspaces/Aprendiendo_CSHARP/practica.csproj",
       "packagesPath": "/home/codespace/.nuget/packages/",
-      "outputPath": "/workspaces/Aprendiendo_CSHARP/practica/obj/",
+      "outputPath": "/workspaces/Aprendiendo_CSHARP/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/codespace/.nuget/NuGet/NuGet.Config"
