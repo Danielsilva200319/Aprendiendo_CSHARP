@@ -44,14 +44,18 @@ else
 }
 Console.WriteLine(message); 
 */
+System.Random random = new System.Random();
 int totalJugador = 0;
 int totalDealer = 0;
 int num = 0;
 string message = "";
 string switchControl = "Menu";
+string controlOtraCarta = "";
 //Blackjack, Juntar 21 pidiendo cartas o en caso de tener menos de 21 igual tener mayor puntuación que el dealer.
 while (true)
 {
+    totalJugador = 0;
+    totalDealer = 0;
 
     switch (switchControl)
     {
@@ -63,14 +67,16 @@ while (true)
         case "21":
             do
             {
-                System.Random random = new System.Random();
                 num = random.Next(1, 12);
                 totalJugador = totalJugador + num;
-                Console.WriteLine("Toma tu carta, Jugador");
+                Console.WriteLine("\nToma tu carta, Jugador");
                 Console.WriteLine($"Te salio el: {num}");
-                Console.WriteLine("¿Deseas otra carta?");
+                Console.WriteLine("\n¿Deseas otra carta?");
+                controlOtraCarta = Console.ReadLine();
             }
-            while (Console.ReadLine() == "Si" || Console.ReadLine() == "si" || Console.ReadLine() == "yes");
+            while (controlOtraCarta == "Si" || controlOtraCarta == "si" || controlOtraCarta == "yes");
+            totalDealer = random.Next(15, 21);
+            Console.WriteLine($"\nEl dealer tiene {totalDealer}!");
             if (totalJugador > totalDealer && totalJugador < 22)
             {
                 message = "Venciste al Dealer, Felicidades\n";
@@ -91,6 +97,7 @@ while (true)
                 message = "Condición no válida\n";
                 switchControl = "Menu";
             }
+            Console.WriteLine(message);
             break;
         default:
             Console.WriteLine("Valor ingresado no válido\n");
