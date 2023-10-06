@@ -48,60 +48,66 @@ System.Random random = new System.Random();
 int totalJugador = 0;
 int totalDealer = 0;
 int num = 0;
+int creditos = 0;
 string message = "";
 string switchControl = "Menu";
 string controlOtraCarta = "";
 //Blackjack, Juntar 21 pidiendo cartas o en caso de tener menos de 21 igual tener mayor puntuación que el dealer.
 while (true)
 {
-    totalJugador = 0;
-    totalDealer = 0;
-
-    switch (switchControl)
+    Console.WriteLine("Welcome to CASINO\n");
+    Console.Write("Cuantos creditos deseas?(Recuerdas que necesita una por ronda): ");
+    creditos = Convert.ToByte(Console.ReadLine());
+    for (int i = 0; i < creditos; i++)
     {
-        case "Menu":
-            Console.WriteLine("Welcome to CASINO");
-            Console.Write("Escriba '21' para jugar al 21: ");
-            switchControl = Console.ReadLine();
-            break;
-        case "21":
-            do
-            {
-                num = random.Next(1, 12);
-                totalJugador = totalJugador + num;
-                Console.WriteLine("\nToma tu carta, Jugador");
-                Console.WriteLine($"Te salio el: {num}");
-                Console.WriteLine("\n¿Deseas otra carta?");
-                controlOtraCarta = Console.ReadLine();
-            }
-            while (controlOtraCarta == "Si" || controlOtraCarta == "si" || controlOtraCarta == "yes");
-            totalDealer = random.Next(15, 21);
-            Console.WriteLine($"\nEl dealer tiene {totalDealer}!");
-            if (totalJugador > totalDealer && totalJugador < 22)
-            {
-                message = "Venciste al Dealer, Felicidades\n";
+        totalJugador = 0;
+        totalDealer = 0;
+        switch (switchControl)
+        {
+            case "Menu":
+                Console.Write("\nEscriba '21' para jugar al 21: ");
+                switchControl = Console.ReadLine();
+                i = i-1;
+                break;
+            case "21":
+                do
+                {
+                    num = random.Next(1, 12);
+                    totalJugador = totalJugador + num;
+                    Console.WriteLine("\nToma tu carta, Jugador");
+                    Console.WriteLine($"Te salio el: {num}");
+                    Console.Write("\n¿Deseas otra carta?: ");
+                    controlOtraCarta = Console.ReadLine();
+                }
+                while (controlOtraCarta == "Si" || controlOtraCarta == "si" || controlOtraCarta == "yes" || controlOtraCarta == "SI");
+                totalDealer = random.Next(15, 21);
+                Console.WriteLine($"\nEl dealer tiene {totalDealer}!");
+                if (totalJugador > totalDealer && totalJugador < 22)
+                {
+                    message = "Venciste al Dealer, Felicidades\n";
+                    switchControl = "Menu";
+                }
+                else if (totalJugador >= 22)
+                {
+                    message = "Perdiste vs el Dealer, Sorry, te pasaste de 21\n";
+                    switchControl = "Menu";
+                }
+                else if (totalJugador <= totalDealer)
+                {
+                    message = "Perdiste vs el Dealer, Sorry\n";
+                    switchControl = "Menu";
+                }
+                else
+                {
+                    message = "Condición no válida\n";
+                    switchControl = "Menu";
+                }
+                Console.WriteLine(message);
+                break;
+            default:
+                Console.WriteLine("Valor ingresado no válido\n");
                 switchControl = "Menu";
-            }
-            else if (totalJugador >= 22)
-            {
-                message = "Perdiste vs el Dealer, Sorry, te pasaste de 21\n";
-                switchControl = "Menu";
-            }
-            else if (totalJugador <= totalDealer)
-            {
-                message = "Perdiste vs el Dealer, Sorry\n";
-                switchControl = "Menu";
-            }
-            else
-            {
-                message = "Condición no válida\n";
-                switchControl = "Menu";
-            }
-            Console.WriteLine(message);
-            break;
-        default:
-            Console.WriteLine("Valor ingresado no válido\n");
-            switchControl = "Menu";
-            break;
+                break;
+        }
     }
 }
