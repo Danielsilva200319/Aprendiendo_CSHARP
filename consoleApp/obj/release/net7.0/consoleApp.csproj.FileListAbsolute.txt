@@ -1,0 +1,15 @@
+/workspaces/Aprendiendo_CSHARP/consoleApp/bin/release/net7.0/consoleApp
+/workspaces/Aprendiendo_CSHARP/consoleApp/bin/release/net7.0/consoleApp.deps.json
+/workspaces/Aprendiendo_CSHARP/consoleApp/bin/release/net7.0/consoleApp.runtimeconfig.json
+/workspaces/Aprendiendo_CSHARP/consoleApp/bin/release/net7.0/consoleApp.dll
+/workspaces/Aprendiendo_CSHARP/consoleApp/bin/release/net7.0/consoleApp.pdb
+/workspaces/Aprendiendo_CSHARP/consoleApp/obj/release/net7.0/consoleApp.csproj.AssemblyReference.cache
+/workspaces/Aprendiendo_CSHARP/consoleApp/obj/release/net7.0/consoleApp.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/Aprendiendo_CSHARP/consoleApp/obj/release/net7.0/consoleApp.AssemblyInfoInputs.cache
+/workspaces/Aprendiendo_CSHARP/consoleApp/obj/release/net7.0/consoleApp.AssemblyInfo.cs
+/workspaces/Aprendiendo_CSHARP/consoleApp/obj/release/net7.0/consoleApp.csproj.CoreCompileInputs.cache
+/workspaces/Aprendiendo_CSHARP/consoleApp/obj/release/net7.0/consoleApp.dll
+/workspaces/Aprendiendo_CSHARP/consoleApp/obj/release/net7.0/refint/consoleApp.dll
+/workspaces/Aprendiendo_CSHARP/consoleApp/obj/release/net7.0/consoleApp.pdb
+/workspaces/Aprendiendo_CSHARP/consoleApp/obj/release/net7.0/consoleApp.genruntimeconfig.cache
+/workspaces/Aprendiendo_CSHARP/consoleApp/obj/release/net7.0/ref/consoleApp.dll
