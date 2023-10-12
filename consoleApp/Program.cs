@@ -1,17 +1,18 @@
 ﻿using System.Runtime.InteropServices;
+using Humanizer;
 
 internal class Program
 {
     private static void Main(string[] args)
     {
-        Console.Write("Por favor ingrese un nombre: ");
+        Console.Write("Please, write your name: ");
         var nombre = Console.ReadLine();
-        Console.Write("Por favor ingrese su cargo: ");
+        Console.Write("Please, write your occupation: ");
         var cargo = Console.ReadLine();
-        Console.Write("Por favor ingrese su edad: ");
-        var edad = Console.ReadLine();
-        Console.WriteLine($"\nMi nombre es {nombre}");
-        Console.WriteLine($"Mi cargo es {cargo}");
-        Console.WriteLine($"Mi edad es {edad}");
+        Console.Write("Please, write your age: ");
+        var edad = int.Parse(Console.ReadLine());
+        Console.WriteLine($"\nMy name is {nombre}");
+        Console.WriteLine($"My occupation is {cargo}");
+        Console.WriteLine($"My age is {edad.ToWords()}");
     }
 }
