@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\APM02-63\\Desktop\\netcore\\Aprendiendo_CSHARP\\consoleApp\\consoleApp.csproj": {}
+    "C:\\Users\\APM02-63\\Desktop\\netcore\\Aprendiendo_CSHARP\\HeroesApp\\HeroesApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\APM02-63\\Desktop\\netcore\\Aprendiendo_CSHARP\\consoleApp\\consoleApp.csproj": {
+    "C:\\Users\\APM02-63\\Desktop\\netcore\\Aprendiendo_CSHARP\\HeroesApp\\HeroesApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\APM02-63\\Desktop\\netcore\\Aprendiendo_CSHARP\\consoleApp\\consoleApp.csproj",
-        "projectName": "consoleApp",
-        "projectPath": "C:\\Users\\APM02-63\\Desktop\\netcore\\Aprendiendo_CSHARP\\consoleApp\\consoleApp.csproj",
+        "projectUniqueName": "C:\\Users\\APM02-63\\Desktop\\netcore\\Aprendiendo_CSHARP\\HeroesApp\\HeroesApp.csproj",
+        "projectName": "HeroesApp",
+        "projectPath": "C:\\Users\\APM02-63\\Desktop\\netcore\\Aprendiendo_CSHARP\\HeroesApp\\HeroesApp.csproj",
         "packagesPath": "C:\\Users\\APM02-63\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\APM02-63\\Desktop\\netcore\\Aprendiendo_CSHARP\\consoleApp\\obj\\",
+        "outputPath": "C:\\Users\\APM02-63\\Desktop\\netcore\\Aprendiendo_CSHARP\\HeroesApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\APM02-63\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -37,12 +37,6 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "dependencies": {
-            "Humanizer": {
-              "target": "Package",
-              "version": "[2.14.1, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
