@@ -9,19 +9,19 @@ var SuperFuerza = new SuperPoderes();
     SuperFuerza.Nombre = "Super Fuerza";
     SuperFuerza.Nivel = (int)NivelPoder.NivelTres;
 
-var Superman = new HeroesApp();
+var Superman = new Heroes();
     Superman.Id = 1;
     Superman.Nombre = "Superman";
     Superman.IndentidadSecreta = "Clark Kent";
     Superman.Ciudad = "Metropolis";
     Superman.PuedeVolar = true;
-var Batman = new HeroesApp();
+var Batman = new Heroes();
     Batman.Id = 2;
     Batman.Nombre = "Batman";
     Batman.IndentidadSecreta = "Bruce Wayne";
     Batman.Ciudad = "Gotham City";
     Batman.PuedeVolar = false;
-var CapitanaMarvel = new HeroesApp();
+var CapitanaMarvel = new Heroes();
     CapitanaMarvel.Id = 3;
     CapitanaMarvel.Nombre ="Capitana Marvel";
     CapitanaMarvel.IndentidadSecreta = "Carol Denvers";
@@ -37,20 +37,31 @@ List<SuperPoderes> poderCapitanaMarvel = new List<SuperPoderes>();
     poderCapitanaMarvel.Add(SuperFuerza);
     Superman.SuperPoderes = poderCapitanaMarvel;
 
-class HeroesApp
+class Heroes
 {
     public int Id;
     public string Nombre;
     public string IndentidadSecreta;
     public string Ciudad;
     public List<SuperPoderes> SuperPoderes;
-    public bool PuedeVolar; 
+    public bool PuedeVolar;
+    
+    public Heroes()
+    {
+        Id = 1;
+        SuperPoderes = new List<SuperPoderes>();
+        PuedeVolar = false;
+    }
 }
 class SuperPoderes
 {
     public string Nombre;
     public string Descripcion;
     public int Nivel;
+    public SuperPoderes()
+    {
+        Nivel = NivelPoder.NivelUno();
+    }
 }
 enum NivelPoder
 {
