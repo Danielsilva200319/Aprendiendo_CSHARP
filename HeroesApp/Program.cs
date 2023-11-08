@@ -58,9 +58,18 @@ class SuperPoderes
     public string Nombre;
     public string Descripcion;
     public int Nivel;
-    public SuperPoderes()
+    /* public SuperPoderes()
     {
         Nivel = NivelPoder.NivelUno();
+    } */
+    public string UsarSuperPoderes()
+    {
+        StringBuilder sb = new StringBuilder();
+        foreach (var item in SuperPoderes)
+        {
+            sb.AppendLine($"{Nombre} esta usando el super poder {item.Nombre}");
+        }
+        return sb.ToString();
     }
 }
 enum NivelPoder
