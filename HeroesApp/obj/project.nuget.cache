@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OMr7opHc0mS/XxcKQjzs0mYkly4ig8oTH1OsPOrkH+RSv644nkifPV4hep3F2kPr91wCPNiYeoxkEzXEScZaBw==",
+  "dgSpecHash": "fs+nzrwPRnnoWxvoGa/r0xetWbghocgA4E51zuhnrWvhF9GvFx8lrb+AeaG4Ubz03dN0jsHPNHnixn5Sd81CaQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\DELL\\Desktop\\netcore\\Aprendiendo_CSHARP\\HeroesApp\\HeroesApp.csproj",
+  "projectFilePath": "/workspaces/Aprendiendo_CSHARP/HeroesApp/HeroesApp.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

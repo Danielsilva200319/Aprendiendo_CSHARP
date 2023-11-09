@@ -1,42 +1,49 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using System.Text;
 
-var poderVolar = new SuperPoderes();
-    poderVolar.Nombre = "Volar";
-    poderVolar.Descripcion = "Capacidad para volar y planear en el aire";
-    poderVolar.Nivel = (int)NivelPoder.NivelDos;
-var SuperFuerza = new SuperPoderes();
-    SuperFuerza.Nombre = "Super Fuerza";
-    SuperFuerza.Nivel = (int)NivelPoder.NivelTres;
+internal class Program
+{
+    private static void Main(string[] args)
+    {
+        var poderVolar = new SuperPoderes();
+        poderVolar.Nombre = "Volar";
+        poderVolar.Descripcion = "Capacidad para volar y planear en el aire";
+        poderVolar.Nivel = (int)NivelPoder.NivelDos;
 
-var Superman = new Heroes();
-    Superman.Id = 1;
-    Superman.Nombre = "Superman";
-    Superman.IndentidadSecreta = "Clark Kent";
-    Superman.Ciudad = "Metropolis";
-    Superman.PuedeVolar = true;
-var Batman = new Heroes();
-    Batman.Id = 2;
-    Batman.Nombre = "Batman";
-    Batman.IndentidadSecreta = "Bruce Wayne";
-    Batman.Ciudad = "Gotham City";
-    Batman.PuedeVolar = false;
-var CapitanaMarvel = new Heroes();
-    CapitanaMarvel.Id = 3;
-    CapitanaMarvel.Nombre ="Capitana Marvel";
-    CapitanaMarvel.IndentidadSecreta = "Carol Denvers";
-    CapitanaMarvel.Ciudad = "Kree";
-    CapitanaMarvel.PuedeVolar = true;
+        var SuperFuerza = new SuperPoderes();
+        SuperFuerza.Nombre = "Super Fuerza";
+        SuperFuerza.Nivel = (int)NivelPoder.NivelTres;
 
-List<SuperPoderes> poderSuperman = new List<SuperPoderes>();
-    poderSuperman.Add(poderVolar);
-    poderSuperman.Add(SuperFuerza);
-    Superman.SuperPoderes = poderSuperman;
-List<SuperPoderes> poderCapitanaMarvel = new List<SuperPoderes>();
-    poderCapitanaMarvel.Add(poderVolar);
-    poderCapitanaMarvel.Add(SuperFuerza);
-    Superman.SuperPoderes = poderCapitanaMarvel;
+        var Superman = new Heroes();
+        Superman.Id = 1;
+        Superman.Nombre = "Superman";
+        Superman.IndentidadSecreta = "Clark Kent";
+        Superman.Ciudad = "Metropolis";
+        Superman.PuedeVolar = true;
 
+        var Batman = new Heroes();
+        Batman.Id = 2;
+        Batman.Nombre = "Batman";
+        Batman.IndentidadSecreta = "Bruce Wayne";
+        Batman.Ciudad = "Gotham City";
+        Batman.PuedeVolar = false;
+
+        var CapitanaMarvel = new Heroes();
+        CapitanaMarvel.Id = 3;
+        CapitanaMarvel.Nombre = "Capitana Marvel";
+        CapitanaMarvel.IndentidadSecreta = "Carol Denvers";
+        CapitanaMarvel.Ciudad = "Kree";
+        CapitanaMarvel.PuedeVolar = true;
+
+        List<SuperPoderes> poderSuperman = new List<SuperPoderes>();
+        poderSuperman.Add(poderVolar);
+        poderSuperman.Add(SuperFuerza);
+        Superman.SuperPoderes = poderSuperman;
+        List<SuperPoderes> poderCapitanaMarvel = new List<SuperPoderes>();
+        poderCapitanaMarvel.Add(poderVolar);
+        poderCapitanaMarvel.Add(SuperFuerza);
+        Superman.SuperPoderes = poderCapitanaMarvel;
+    }
+}
 class Heroes
 {
     public int Id;
@@ -45,7 +52,7 @@ class Heroes
     public string Ciudad;
     public List<SuperPoderes> SuperPoderes;
     public bool PuedeVolar;
-    
+
     public Heroes()
     {
         Id = 1;
