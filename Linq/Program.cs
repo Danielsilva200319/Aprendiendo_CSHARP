@@ -18,7 +18,6 @@
     };
     private static void Main(string[] args)
     {
-        // Console.WriteLine("Hello, World!");
         IEnumerable<Student> studentquery =
                     from student in students
                     where student.Scores[0] > 90 && student.Scores[3] < 80

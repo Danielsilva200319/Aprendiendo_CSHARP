@@ -12,3 +12,4 @@ C:\Users\DELL\Desktop\netcore\Aprendiendo_CSHARP\Linq\obj\Debug\net7.0\refint\Li
 C:\Users\DELL\Desktop\netcore\Aprendiendo_CSHARP\Linq\obj\Debug\net7.0\Linq.pdb
 C:\Users\DELL\Desktop\netcore\Aprendiendo_CSHARP\Linq\obj\Debug\net7.0\Linq.genruntimeconfig.cache
 C:\Users\DELL\Desktop\netcore\Aprendiendo_CSHARP\Linq\obj\Debug\net7.0\ref\Linq.dll
+C:\Users\DELL\Desktop\netcore\Aprendiendo_CSHARP\Linq\obj\Debug\net7.0\Linq.sourcelink.json
